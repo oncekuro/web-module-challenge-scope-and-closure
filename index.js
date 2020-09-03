@@ -111,6 +111,21 @@ and returns the score at each pont in the game, like so:
 9th inning: awayTeam - homeTeam
 Final Score: awayTeam - homeTeam */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function getInningScore(inning, home, away) {
+  home += inning();
+  away += inning();
+}
+
+function scoreboard(getInningScore, inning, numberofInnings) {
+  let home = 0;
+  let away = 0;
+  let count = 0;
+  let th = "1st";
+
+  while (numberofInnings > 0) {
+    getInningScore(inning, home, away);
+    count++;
+    if (count == 2) {
+    }
+  }
 }
